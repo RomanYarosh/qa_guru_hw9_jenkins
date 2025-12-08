@@ -7,6 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+
 @Tag("demoqa")
 public class PracticeFormDemoqa {
 
@@ -15,6 +16,7 @@ public class PracticeFormDemoqa {
         Configuration.browserSize = "1920x1080";
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
+        Configuration.timeout = 5000;
     }
     
     @Test
