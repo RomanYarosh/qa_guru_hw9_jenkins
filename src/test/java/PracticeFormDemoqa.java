@@ -8,7 +8,6 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-@Tag("demoqa")
 public class PracticeFormDemoqa {
 
     @BeforeAll
@@ -20,6 +19,7 @@ public class PracticeFormDemoqa {
     }
     
     @Test
+    @Tag("demoqa")
     void fillFormTest() {
         open("/automation-practice-form");
 

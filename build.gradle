@@ -44,7 +44,11 @@ tasks.withType(Test) {
     }
 }
 
-task PracticeFormDemoqa (type: Test) {
+test {
+    useJUnitPlatform()
+}
+
+tasks.register('demoqa_test', Test) {
     useJUnitPlatform {
         includeTags("demoqa")
     }
